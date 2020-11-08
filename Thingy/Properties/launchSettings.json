@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BobsAdventure": {
+      "commandName": "Project"
+    },
+    "Bobs Adventure": {
+      "commandName": "Executable"
+    }
+  }
+}
