@@ -9,10 +9,11 @@ namespace BobsBizzareAdventure2
 
         private static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine("I Am The Narrater I Look Down at the player, you, Dave, and I Think WHAT ARE YOU DOING");
-            Console.WriteLine("FROM ABOVE YOU LOOK LIKE A MORON, YOU THE PLAYER PICKED UP A BARRAL 77 TIME'S BEFORE NOTICEING THE BIG RED Button");
-            Console.WriteLine("Next to the Door, I Want my own adventure, An adventure about me, BOB, What do you Think Player?");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("I Am The Narrater I Look Down at the player, and I Think WHAT ARE YOU DOING");
+            Console.WriteLine("FROM ABOVE YOU LOOK LIKE A IDIOT, YOU THE PLAYER DICIDED IT WOULD BE A GOOD IDEA");
+            Console.WriteLine("TO PRESS THE BIG RED BUTTON ON THE DEATH PANEL,");
+            Console.WriteLine("I want my own adventure, Hey Player Will you Help me ?");
 
             Program p = new Program();
             p.Run();
@@ -27,11 +28,11 @@ namespace BobsBizzareAdventure2
             var multiChoiceAwnser = AskMultiplyChoiceQuestion(new List<Question>
             { new Question
               {
-                Value = "PFFFF AHAAH YOUR NAME IS BOB"
+                Value = "PFFFF AHAAHAHAHAHAAH YOUR NAME IS BOB REALLY BOB"
               },
               new Question
               {
-                Value = "Have Fun with That"
+                Value = "Have Fun with That Because I'm not helping"
               },
               new Question
               {
@@ -39,7 +40,7 @@ namespace BobsBizzareAdventure2
               },
               new Question
               {
-                Value = "Really You Want an Adventure"
+                Value = "oh Really You Want an Adventure"
               }
             });
 
@@ -47,17 +48,25 @@ namespace BobsBizzareAdventure2
             switch (multiChoiceAwnser.AwnseredNumber)
             {
                 case 1:
+                    Console.ForegroundColor = ConsoleColor.Red;
+
                     Console.WriteLine("Well I Dont think's it's that Funny Thank YOU");
                     return;
                 case 2:
+                    Console.ForegroundColor = ConsoleColor.Red;
+
                     Console.WriteLine("what You won't Help Me ?");
                     return;
                 case 3:
-                    Console.WriteLine("thank you let's Continue");
+                    Console.ForegroundColor = ConsoleColor.Red;
+
+                    Console.WriteLine("Flattery won't get you places kid");
                     return;
 
                    default:
-                    Console.WriteLine("That a big ask or something ?");
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                    Console.WriteLine("That a big ask or something?");
                     return;
 
             }
