@@ -10,15 +10,21 @@ namespace BobsBizzareAdventure2
         private static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("I Am The Narrater I Look Down at the player, and I Think WHAT ARE YOU DOING");
-            Console.WriteLine("FROM ABOVE YOU LOOK LIKE A IDIOT, YOU THE PLAYER DICIDED IT WOULD BE A GOOD IDEA");
-            Console.WriteLine("TO PRESS THE BIG RED BUTTON ON THE DEATH PANEL,");
-            Console.WriteLine("I want my own adventure, Hey Player Will you Help me ?");
+            Console.WriteLine(" ");
+            Console.WriteLine("     I Am The Narrater I Look Down at the player, and I Think WHAT ARE YOU DOING");
+            Console.WriteLine("   FROM ABOVE YOU LOOK LIKE A IDIOT, YOU THE PLAYER DICIDED IT WOULD BE A GOOD IDEA");
+            Console.WriteLine("                   TO PRESS THAT BIG RED BUTTON ON THE DEATH PANEL,");
+            Console.WriteLine(" ");
+            Console.WriteLine("                 I want my own adventure, Hey Player Will you Help me ?");
+            Console.WriteLine(" ");
 
             Program p = new Program();
             p.Run();
 
-            Console.WriteLine("double tap enter to close");
+            Console.WriteLine(" ");
+            Console.WriteLine("                                       Game Over");
+            Console.WriteLine(" ");
+            Console.WriteLine("                                double tap enter to close");
             Console.ReadLine();
 
         }
@@ -28,19 +34,19 @@ namespace BobsBizzareAdventure2
             var multiChoiceAwnser = AskMultiplyChoiceQuestion(new List<Question>
             { new Question
               {
-                Value = "PFFFF AHAAHAHAHAHAAH YOUR NAME IS BOB REALLY BOB"
+                Value = "        Laugh: PFFFF AHAAHAHAHAHAAH YOUR NAME IS BOB, REALLY YOUR NAME IS BOB"
               },
               new Question
               {
-                Value = "Have Fun with That Because I'm not helping"
+                Value = "         Lazy: Have Fun with That Because I'm not helping"
               },
               new Question
               {
-                Value = "Ya That would be Awsome Narraror Your such a Good Friend"
+                Value = "Super Sarcasm: Ya That would be Awsome Narraror Your such a Good Friend"
               },
               new Question
               {
-                Value = "oh Really You Want an Adventure"
+                Value = "      Sarcasm: oh Really You Want an Adventure"
               }
             });
 
@@ -49,24 +55,36 @@ namespace BobsBizzareAdventure2
             {
                 case 1:
                     Console.ForegroundColor = ConsoleColor.Red;
-
-                    Console.WriteLine("Well I Dont think's it's that Funny Thank YOU");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("      The Narrator BOB: Well I Dont think's it's that Funny Thank YOU");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("                                        BANG!!!!!");
+                    Console.WriteLine("                                    You were Shot With a Revolver!!!");
                     return;
                 case 2:
                     Console.ForegroundColor = ConsoleColor.Red;
-
-                    Console.WriteLine("what You won't Help Me ?");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("      The Narrator BOB: You won't Help Me ?!, you Lazy Jerk I'll have you Shot for this");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("                                    5 Year's Later");
+                    Console.WriteLine("                                   BANG BANG BANG!!!!!");
+                    Console.WriteLine("                                    You were Shot With a Rifle!!!");
+                    Console.WriteLine("                                   By The Assassin");
                     return;
                 case 3:
                     Console.ForegroundColor = ConsoleColor.Red;
-
-                    Console.WriteLine("Flattery won't get you places kid");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("      The Narrator BOB: Flattery won't get you places kid");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("                                   BANG BANG BANG!!!!!");
+                    Console.WriteLine("                                    You were Shot With a Revolver!!!");
+                    Console.WriteLine("                                   By The Narrator BOB");
                     return;
 
                    default:
                     Console.ForegroundColor = ConsoleColor.White;
-
-                    Console.WriteLine("That a big ask or something?");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("      The Narrator BOB: That a big ask or something?");
                     return;
 
             }
