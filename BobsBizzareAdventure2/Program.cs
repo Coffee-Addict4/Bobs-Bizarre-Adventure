@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace BobsBizzareAdventure2
 {
@@ -20,6 +21,9 @@ namespace BobsBizzareAdventure2
             Console.WriteLine(" ");
             // NEVER BREAKPOINT V
             Program p = new Program();
+
+            p.AskYesOrNoQuestion("Does this work", 'Y', 'N');
+            
             p.Question();
 
             Console.WriteLine(" ");
@@ -195,8 +199,8 @@ namespace BobsBizzareAdventure2
                         awnser = false;
                         break;
                     default:
-                        Console.WriteLine("Evil Mike: Try Again idoit");
-                        // also need to add delay here as well
+                        Console.WriteLine("Evil Mike: Try Again idiot");
+                        Delay(10);
                         Console.WriteLine("Good Colly: He means PLease try again");
                         break;
 
@@ -205,6 +209,32 @@ namespace BobsBizzareAdventure2
             while (awnser.HasValue == false);
             Console.WriteLine();
             return awnser.Value;
+        }
+
+        private void Delay(int seconds)
+        {
+            var spinner = "/-\\".ToCharArray();
+            
+            var currentTop = Console.CursorTop;
+            var currentLeft = Console.CursorLeft;
+
+            var index = 0;
+            
+            for (int i = 0; i < seconds * 10; i++)
+            {
+                if (spinner.Length <= index)
+                {
+                    index = 0;
+                }
+
+                var spinChar = spinner[index++];
+                Console.Write(spinChar);
+                Console.CursorTop = currentTop;
+                Console.CursorLeft = currentLeft;
+                Thread.Sleep(100);
+            }
+            
+            Console.WriteLine();
         }
 
         private Awnser AskQuestion(string question, char trueAwnser, char? falseAwnser = null)
