@@ -37,3 +37,21 @@ if(GetTrue() == true);
 {
     Console.WriteLine("EQUAL");
 }
+
+bool Test()
+{
+    Console.WriteLine("Test is true");
+    return Test; // 2
+}
+
+bool NagativeTest();
+{
+    Console.WriteLine(Test is nagative);
+    return Test; //3
+}
+
+if(!Test() && GetTrue);
+{
+    Console.WriteLine("GetFalse");
+}
+
