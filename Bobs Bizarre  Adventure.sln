@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BobsBizzareAdventure2", "Bo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JadonsLearnsIfBlocks", "JadonsLearnsIfBlocks\JadonsLearnsIfBlocks.csproj", "{B4FC9E90-FAD7-47A6-9F06-86F5B0402D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boolean", "Boolean\Boolean.csproj", "{C62F9F10-2823-42A8-B308-5F08ADBEEB8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B4FC9E90-FAD7-47A6-9F06-86F5B0402D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4FC9E90-FAD7-47A6-9F06-86F5B0402D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4FC9E90-FAD7-47A6-9F06-86F5B0402D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62F9F10-2823-42A8-B308-5F08ADBEEB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62F9F10-2823-42A8-B308-5F08ADBEEB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62F9F10-2823-42A8-B308-5F08ADBEEB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62F9F10-2823-42A8-B308-5F08ADBEEB8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

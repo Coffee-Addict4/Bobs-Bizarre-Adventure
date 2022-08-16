@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+console.ForegroundColor=red;
 Console.WriteLine("I am the lorax I Speak for the Trees]");
 
+Console.WriteLine("");
 
 var response = Console.ReadLine();
 
