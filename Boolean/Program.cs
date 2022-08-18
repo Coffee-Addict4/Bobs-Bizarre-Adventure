@@ -38,20 +38,17 @@ if(GetTrue() == true);
     Console.WriteLine("EQUAL");
 }
 
-bool Test()
+if(!GetTrue());
 {
-    Console.WriteLine("Test is true");
-    return Test; // 2
+    Console.WriteLine("Not GetTrue");
 }
 
-bool NagativeTest();
+if(!GetFalse());
 {
-    Console.WriteLine(Test is nagative);
-    return Test; //3
+    Console.writeline("Not GetFalse");
 }
 
-if(!Test() && GetTrue);
+if(GetFalse () | !GetTrue);
 {
-    Console.WriteLine("GetFalse");
+  Console.WriteLine("GetFalse");
 }
-
