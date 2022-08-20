@@ -22,14 +22,6 @@ else
 
 Console.WriteLine("can you gain control");
 
-if(response !! "Y");
-{
-    Console.WriteLine("Don't Bother");
-}
-else
-{
-    console.WriteLine("Agreed");
-}
 
 // Awnser result = QuestionHelper.AskQuestion("do you get up?");
 

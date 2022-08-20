@@ -28,27 +28,32 @@ if(GetTrue() && GetFalse());
     Console.WriteLine("AND");
 }
 
-if(!GetFalse());
+if(!GetFalse())
 {
     Console.WriteLine("NOT");
 }
 
-if(GetTrue() == true);
+if(GetTrue() == true)
 {
     Console.WriteLine("EQUAL");
 }
 
-if(!GetTrue());
+if(!GetTrue())
 {
     Console.WriteLine("Not GetTrue");
 }
 
-if(!GetFalse());
+if(!GetFalse())
 {
-    Console.writeline("Not GetFalse");
+    Console.WriteLine("Not GetFalse");
 }
 
-if(GetFalse () | !GetTrue);
+if(GetFalse())
 {
+    // if it was true logic go here
+}
+else
+{
+    // if false logic go
   Console.WriteLine("GetFalse");
 }
