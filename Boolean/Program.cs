@@ -51,9 +51,20 @@ if(!GetFalse())
 if(GetFalse())
 {
     // if it was true logic go here
+    Console.WriteLine("GetFalse=True");
+}
+else if(!GetTrue())
+{
+    // if false logic go
+  Console.WriteLine("GetFalse=False");
+}
+
+if(GetTrue() == true)
+{
+    Console.ForegroundColor(ConsoleColor.Red);
+    Console.WriteLine("GetTrue is True");
 }
 else
 {
-    // if false logic go
-  Console.WriteLine("GetFalse");
+    Console.WriteLine("GetTrue is False");
 }
