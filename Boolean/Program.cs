@@ -61,10 +61,18 @@ else if(!GetTrue())
 
 if(GetTrue() == true)
 {
-    Console.ForegroundColor(ConsoleColor.Red);
     Console.WriteLine("GetTrue is True");
 }
 else
 {
     Console.WriteLine("GetTrue is False");
+}
+
+if(!GetTrue() == false)
+{
+    Console.WriteLine("GetTrue = False");
+}
+else if (GetTrue() == true)
+{
+    Console.WriteLine("Getrue = True");
 }
