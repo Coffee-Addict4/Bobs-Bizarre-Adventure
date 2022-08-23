@@ -23,7 +23,7 @@ if(GetTrue() | GetFalse())
     Console.WriteLine("OR");
 }
 
-if(GetTrue() && GetFalse());
+if(GetTrue() && GetFalse())
 {
     Console.WriteLine("AND");
 }
@@ -53,7 +53,7 @@ if(GetFalse())
     // if it was true logic go here
     Console.WriteLine("GetFalse=True");
 }
-else if(!GetTrue())
+else if(GetTrue())
 {
     // if false logic go
   Console.WriteLine("GetFalse=False");
@@ -68,11 +68,24 @@ else
     Console.WriteLine("GetTrue is False");
 }
 
-if(!GetTrue() == false)
+if(GetTrue() == false)
 {
     Console.WriteLine("GetTrue = False");
 }
 else if (GetTrue() == true)
 {
-    Console.WriteLine("Getrue = True");
+    Console.WriteLine("GetTrue = True");
+}
+
+int sum1 = 100 + 50;
+int sum2 = sum1 + 250;
+int sum3 = sum2 + sum2;
+
+if(sum2 >= 400)
+{
+    Console.WriteLine("Sum2 >= 400");
+}
+else
+{
+    Console.WriteLine("False");
 }
