@@ -89,3 +89,25 @@ else
 {
     Console.WriteLine("False");
 }
+
+int X = 100;
+int Y = 200;
+int Z  = Y + X;
+
+if(Y > X)
+{
+Console.WriteLine("Y > X");
+}
+else
+{
+    Console.WriteLine("Y isn't Greater then X?");
+}
+
+if(X < Y && Y < Z == true)
+{
+    Console.WriteLine("X < Y < Z");
+}
+else if (X > Y | Y > Z == false)
+(
+    Console.WriteLine("Bad math");
+)
