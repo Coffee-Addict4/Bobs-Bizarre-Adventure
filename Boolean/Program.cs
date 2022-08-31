@@ -108,6 +108,60 @@ if(X < Y && Y < Z == true)
     Console.WriteLine("X < Y < Z");
 }
 else if (X > Y | Y > Z == false)
-(
+{
     Console.WriteLine("Bad math");
-)
+}
+
+IEnumerable<int> GetNumbers(int howManyNumbers)
+{
+    for(int i=0; i<howManyNumbers; i++)
+    {
+        yield return i;
+    }
+}
+List<int> numbers; // Declare
+numbers = GetNumbers(200).ToList(); // Set variable
+
+// Get all the even numbers from this list and print them to console
+
+foreach (var number in numbers)
+{
+    if(number%2==0)
+    Console.WriteLine(number);
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number:{number} remainder:{number%9}");
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number:{number} multible:{number*2}");
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number{number} division:{number/2}");
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number{number} Multible:{number*2} Division{number/2} remainder {number%2}");
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number:{number} Added to self:{number+number}");
+}
+
+foreach (var number in numbers)
+{
+    Console.WriteLine($"number{number} Number multilied by self multiplied by self:{number*number*number}");
+}
+
+foreach (var number in numbers)
+{
+    if(number%2==0==false)
+    Console.WriteLine($"number:{number} Really big number{number*number*number*number/number}");
+}
